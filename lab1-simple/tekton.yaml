@@ -55,7 +55,7 @@ spec:
     command:
     - echo
     image: ubuntu
-    name: echo Hello Ketan $(params.URL)
+    name: echo Hello Ketan
   - args:
     - -l
     - /
