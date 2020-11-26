@@ -46,7 +46,7 @@ spec:
 		params:
 		- name: URL
 		  value: "https://github.com/ketank-new/tekton-toolchain.git"
-		- name: REVISION
+		- name: TAG
 		  value: master
   tasks:
   - name: xx1
