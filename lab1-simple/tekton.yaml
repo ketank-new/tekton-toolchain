@@ -52,13 +52,15 @@ spec:
   steps:
   - args:
     - 01 version
+    - 'Hello'
     command:
-    - echo Hello
+    - echo
     image: ubuntu
     name: echo
   - args:
     - -l
     - /
+    - Ketan
     command:
     - ls
     image: ubuntu
