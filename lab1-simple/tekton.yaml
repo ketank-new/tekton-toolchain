@@ -49,10 +49,6 @@ kind: Task
 metadata:
   name: the-task
 spec:
-params:
-  - name: TEST
-    type: string
-    value: "123"
   steps:
   - args:
     - [01 version, 'Hello', "TEST=$(params.TEST)"]
