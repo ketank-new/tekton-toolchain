@@ -39,7 +39,7 @@ spec:
 	  - name: URL
 	    value: "https://github.com/ketank-new/tekton-toolchain.git"
 	  - name: REVISION
-            value: master
+	    value: master
       pipelineRef:
         name: pipeline
 ---
