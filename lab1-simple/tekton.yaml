@@ -30,7 +30,7 @@ params:
     description: revision number
   - name: URL
     description: repo url
-  resourcetemplates:
+resourcetemplates:
   - apiVersion: tekton.dev/v1beta1
     kind: PipelineRun
     metadata:
