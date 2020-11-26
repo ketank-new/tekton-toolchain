@@ -39,6 +39,15 @@ kind: Pipeline
 metadata:
   name: pipeline
 spec:
+    resources:
+	- name: source
+	  resourceSpec:
+	    type: git
+		params:
+		- name: URL
+		  value: "https://github.com/ketank-new/tekton-toolchain.git"
+		- name: REVISION
+		  value: master
   tasks:
   - name: xx1
     taskRef:
