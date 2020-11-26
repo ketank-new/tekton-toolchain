@@ -14,12 +14,22 @@ apiVersion: tekton.dev/v1beta1
 kind: TriggerBinding
 metadata:
   name: theTriggerBinding
+params:
+  - name: gitrevision
+    value: $(body.pull_request.head.sha)
+  - name: gitrepositoryurl
+    value: $(body.pull_request.head.repo.clone_url)
 ---
 apiVersion: tekton.dev/v1beta1
 kind: TriggerTemplate
 metadata:
   name: theTemplateTrigger
 spec:
+params:
+  - name : REVISION
+    description: revision number
+  - name: URL
+    description: repo url
   resourcetemplates:
   - apiVersion: tekton.dev/v1beta1
     kind: PipelineRun
@@ -50,7 +60,7 @@ spec:
     command:
     - echo
     image: ubuntu
-    name: echo
+    name: echo Hello Ketan $(params.URL)
   - args:
     - -l
     - /
