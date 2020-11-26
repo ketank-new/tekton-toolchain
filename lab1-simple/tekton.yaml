@@ -31,6 +31,15 @@ spec:
     metadata:
       name: pipelinerun-$(uid)
     spec:
+      resources:
+	    - name: source
+	      resourceSpec:
+	        type: git
+		      params:
+		      - name: URL
+		        value: "https://github.com/ketank-new/tekton-toolchain.git"
+		      - name: REVISION
+		        value: master
       pipelineRef:
         name: pipeline
 ---
