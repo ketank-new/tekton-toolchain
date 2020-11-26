@@ -45,7 +45,7 @@ spec:
       type: git
       params:
       - name: URL
-	value: "https://github.com/ketank-new/tekton-toolchain.git"
+        value: "https://github.com/ketank-new/tekton-toolchain.git"
       - name: TAG
         value: master
   tasks:
