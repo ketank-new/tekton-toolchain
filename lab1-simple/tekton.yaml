@@ -53,9 +53,9 @@ spec:
   - args:
     - 01 version
     command:
-    - echo
+    - echo Hello
     image: ubuntu
-    name: echo Hello Ketan
+    name: echo
   - args:
     - -l
     - /
