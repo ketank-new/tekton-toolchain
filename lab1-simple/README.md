@@ -1,7 +1,7 @@
 # Tekton in the IBM Cloud - part 1 getting started
 
 ## Goal
-You will create a **Toolchain Service** that contains a **Delivery Pipeline**.  The Delivery Pipeline will contain the Tekton resources required to execute automated build and deploy steps when a trigger is clicked.
+You will create a **Toolchain Service** that contains a **Delivery Pipeline**.  The Delivery Pipeline will contain the Tekton resources required to execute automated build and deploy steps when a trigger is clicked
 
 ## Before you begin
 Navigate to the [tekton-toolchain](https://github.com/IBM-Cloud/tekton-toolchain) GitHub repository and make a fork.  I will refer to this fork as https://github.com/powellquiring/tekton-toolchain in this tutorial, when you see this replace it with your fork.
